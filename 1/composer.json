@@ -1,0 +1,12 @@
+{
+    "name": "lexx/1",
+    "authors": [
+        {
+            "name": "Alexei LEXX Zhukov",
+            "email": "lexx@webmakerz.ru"
+        }
+    ],
+    "require": {
+    	"markbaker/matrix":"^3.0"
+    }
+}

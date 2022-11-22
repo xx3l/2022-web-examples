@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "97a7097e93f82a015ab76ad935952776",
+    "packages": [
+        {
+            "name": "phpmath/bignumber",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpmath/bignumber.git",
+                "reference": "bce0d553db28f6b68e0cb3f390cda929cb413efb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpmath/bignumber/zipball/bce0d553db28f6b68e0cb3f390cda929cb413efb",
+                "reference": "bce0d553db28f6b68e0cb3f390cda929cb413efb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHP\\Math\\BigNumber\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Walter Tamboer",
+                    "homepage": "http://www.waltertamboer.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A PHP library to work with big numbers.",
+            "keywords": [
+                "bignumber",
+                "math"
+            ],
+            "support": {
+                "issues": "https://github.com/phpmath/bignumber/issues",
+                "source": "https://github.com/phpmath/bignumber/tree/master"
+            },
+            "time": "2016-04-18T19:04:46+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

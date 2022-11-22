@@ -1,0 +1,17 @@
+{
+    "name": "lexx/www",
+    "autoload": {
+        "psr-4": {
+            "Lexx\\Www\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexei LEXX Zhukov",
+            "email": "lexx@webmakerz.ru"
+        }
+    ],
+    "require": {
+    	"phpmath/bignumber":"^1.0"
+    }
+}
