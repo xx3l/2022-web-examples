@@ -18,5 +18,4 @@ imagestring($im, 3, 100, 100, "Hello", $c1);
 // Array ( [correct] => 3 [n] => 1 ) Array ( [correct] => 4 [n] => 2 ) Array ( [correct] => 5 [n] => 3 )
 header("Content-type: image/png");
 imagepng($im);
-
 ?>
