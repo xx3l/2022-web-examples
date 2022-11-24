@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="200">
+  <meta http-equiv="refresh" content="500">
 </head>
 <body>
 <?php
