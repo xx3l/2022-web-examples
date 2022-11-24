@@ -22,3 +22,4 @@ print json_encode($a);
   <input type="checkbox" name="c" value="3"> asjhd fhljasdf 
   <input type="submit">
 </form>
+<img src="pic.php?n=10" alt="Тут картинко!">
