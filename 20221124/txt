@@ -1,0 +1,19 @@
+- New LAB
+- Quiz APP
+1. You will need to create MORE than 5 questions.
+2. User must answer for 5 questions
+3. Questions must be described in DB (not in code!)
+4. Each question must have MORE than 4 answers with at 
+   least 1 correct answer.
+5. For each question your app must get random 4 answers 
+   with at least 1 correct
+6. If answer set fro user contains more than 1 correct answer
+   - use checkboxes (multiple choice), 
+   -  otherwise - radio input (single choice)
+7. Result at the end ot a test (how much mistakes user got)
+8. Show some graph with total attempts results 
+  (users per mistakes) 
+  3 => 10
+  4 => 5
+  
+Quiz questions about Web-programming
