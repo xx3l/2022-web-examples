@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="2">
+  <meta http-equiv="refresh" content="200">
 </head>
 <body>
 <?php
@@ -23,7 +23,7 @@ $result = $conn->query("SELECT id,user,msg FROM messages
   WHERE visible=1
   ORDER BY id desc LIMIT 20");
   
-$username = "Buddy";
+$username = "Buddy1";
 print "<ul>";
 while ($row = $result->fetch_assoc()) {
   print "<li>";
