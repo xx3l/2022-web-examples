@@ -7,3 +7,11 @@ for($i = 0; $i < 5; $i++) {
 	array_splice($questions, $n, 1);
 }
 print json_encode($a);
+?>
+<form>
+  <input type="radio" name="a" value="1">slkdfj
+  <input type="radio" name="a" value="2"> asjhd fhljasdf 
+  <input type="radio" name="b" value="3"> asjhd fhljasdf 
+  <input type="radio" name="b" value="4"> asjhd fhljasdf 
+  <input type="submit">
+</form>
