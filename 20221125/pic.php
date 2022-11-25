@@ -10,5 +10,8 @@ while (--$n > 0) {
   imagefilledrectangle($im, 
     rand(0,$x), rand(0,$y), rand(0,$x), rand(0,$y), $c);
 }
-header("Content-Type: image/png");
-imagepng($im);
+imagestring($im, 2, 100,200, "Hello, pixel world!",
+    imagecolorallocate($im, 255,255,255)
+  );
+header("Content-Type: image/gif");
+imagegif($im);
