@@ -1,4 +1,6 @@
 <?php
+print_r($_REQUEST);
+//print_r($_SERVER);
 $a = [1,2,4,5,6,7];
 $test = [];
 for ($i=0; $i<5; $i++) {
@@ -23,10 +25,10 @@ print json_encode($test);
   <input type="radio" name="a" value="4"> 4<br>
   <input type="submit">
 </form>
-<form>
-  <input type="checkbox" name="a" value="1"> 1<br>
-  <input type="checkbox" name="a" value="2"> 2<br>
-  <input type="checkbox" name="a" value="3"> 3<br>
-  <input type="checkbox" name="a" value="4"> 4<br>
+<form method="post">
+  <input type="checkbox" name="a[]" value="1"> 1<br>
+  <input type="checkbox" name="a[]" value="2"> 2<br>
+  <input type="checkbox" name="a[]" value="3"> 3<br>
+  <input type="checkbox" name="a[]" value="4"> 4<br>
   <input type="submit">
 </form>
