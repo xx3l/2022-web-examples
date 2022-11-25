@@ -5,5 +5,5 @@ for ($i=0; $i<5; $i++) {
 	$n = rand(0, count($a)-1);
 	$test[] = $a[$n];
 	array_splice($a, $n, 1);
-	print "$n ";
 }
+print json_encode($test);
