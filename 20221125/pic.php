@@ -1,8 +1,14 @@
 <?php
-$n = $_GET["n"] ?? 0;
-$m = $_GET["m"] ?? 0;
-$im = imagecreatetruecolor(400,300);
-$c = imagecolorallocatealpha($im, 255, 16, 64, 64);
-imagefilledrectangle($im, $n, $n, $m, $m, $c);
+$x = $_GET["x"] ?? 400;
+$y = $_GET["y"] ?? 300;
+$n = $_GET["n"] ?? 10;
+$im = imagecreatetruecolor($x,$y);
+while (--$n > 0) {
+  $c = imagecolorallocatealpha(
+    $im, rand(0,255), rand(0,255), rand(0,255), 64
+  );
+  imagefilledrectangle($im, 
+    rand(0,$x), rand(0,$y), rand(0,$x), rand(0,$y), $c);
+}
 header("Content-Type: image/png");
 imagepng($im);

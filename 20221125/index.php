@@ -32,4 +32,4 @@ print json_encode($test);
   <input type="checkbox" name="a[]" value="4"> 4<br>
   <input type="submit">
 </form>
-<img src="pic.php?a=10&b=20">
+<img src="pic.php?n=10&x=600&y=800">
