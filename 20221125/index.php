@@ -7,3 +7,26 @@ for ($i=0; $i<5; $i++) {
 	array_splice($a, $n, 1);
 }
 print json_encode($test);
+
+//select count(id) n from answers
+//where id in 11,13,16,17 and correct=1
+
+
+//select * from answers where id like "%Е-13%" 
+//union 
+//select * from answers where k < v
+?>
+<form>
+  <input type="radio" name="a" value="1"> 1<br>
+  <input type="radio" name="a" value="2"> 2<br>
+  <input type="radio" name="a" value="3"> 3<br>
+  <input type="radio" name="a" value="4"> 4<br>
+  <input type="submit">
+</form>
+<form>
+  <input type="checkbox" name="a" value="1"> 1<br>
+  <input type="checkbox" name="a" value="2"> 2<br>
+  <input type="checkbox" name="a" value="3"> 3<br>
+  <input type="checkbox" name="a" value="4"> 4<br>
+  <input type="submit">
+</form>
