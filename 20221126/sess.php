@@ -25,4 +25,4 @@ print_r($_SESSION);
   <input type="hidden" name="action" value="next">
   <input type="submit" value="Следующий вопрос">
 </form>
-
+<img src="pix.php?k=2">
