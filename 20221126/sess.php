@@ -7,6 +7,13 @@ if ($action == "start") {
 	$_SESSION["current_question"] = 0;
 	print "Вы поехали!";
 }
+if ($action == "next") {
+	$_SESSION["current_question"] += 1;
+	if ($_SESSION["current_question"] > $_SESSION["questions_count"]) {
+		$_SESSION["current_question"] = -1;
+		print "Вы закончили тест";
+	}
+}
 print_r($_SESSION);
 ?>
 <form method="post">
