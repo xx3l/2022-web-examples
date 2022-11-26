@@ -36,3 +36,12 @@ for($i = 0; $i < 3; $i++) {
 }
 
 print_r($pool);
+print "-----------\n";
+$a = $pool;
+$pool = [];
+for($i = 0; $i < 4; $i++) {
+	$n = rand(0, count($a)-1);
+	$pool[] = $a[$n];
+	array_splice($a, $n, 1);
+}
+print_r($pool);
