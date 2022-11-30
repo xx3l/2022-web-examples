@@ -1,6 +1,6 @@
 <?php
 $im = imagecreatetruecolor(800,600);
-header("Content-Type: image/jpeg");
+header("Content-Type: image/png");
 $n = $_GET["n"] ?? 1;
 for ($i = 0; $i < $n; $i++) {
   $c1 = imagecolorallocatealpha($im, 
@@ -11,7 +11,7 @@ for ($i = 0; $i < $n; $i++) {
 
 $c1 = imagecolorallocatealpha($im, 
     255, 255, 255, 64);
-imagestring($im, 3, 200,200,"Hello, n=$n", imagecolorallocatealpha($im, 
+imagestring($im, 3, 200,200,"Привет, n=$n", imagecolorallocatealpha($im, 
     255, 255, 255, 64));
 
-imagejpeg($im);
+imagepng($im);
