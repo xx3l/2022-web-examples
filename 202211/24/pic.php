@@ -7,7 +7,7 @@ $n = $_GET["n"] ?? 1;
 
 //print $a->a;
 
-var_dump((strpos("hello","h") == false));
+var_dump((strpos("hello","h") === false));
 
 die();
 
