@@ -3,7 +3,13 @@ $im = imagecreatetruecolor(800,600);
 //header("Content-Type: image/png");
 $n = $_GET["n"] ?? 1;
 
-function random_rect(resource $im, int $x, int $y) {
+$a = (object)["a" => 5, "b"=>[1,2]];
+
+print $a->a;
+
+die();
+
+function random_rect(object $im, int $x, int $y) : void {
 	print "draw rect";
 	$c1 = imagecolorallocatealpha($im, 
 		rand(0,255), rand(0,255), rand(0,255), 64);
@@ -13,7 +19,7 @@ function random_rect(resource $im, int $x, int $y) {
 }
 
 for ($i = 0; $i < $n; $i++) 
-	random_rect(1, 800, 600);
+	random_rect($im, 800, 600);
 
 $c1 = imagecolorallocatealpha($im, 
     255, 255, 255, 64);
