@@ -1,4 +1,5 @@
 <?php
+print_r($_REQUEST);
 $command = ';';
 $x = 0.5;
 //eval ($command);
