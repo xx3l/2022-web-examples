@@ -1,4 +1,4 @@
 <?php
-$command = '$x = 2;';
+$command = 'phpinfo();';
 eval ($command);
 print $x;
