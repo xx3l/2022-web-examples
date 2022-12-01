@@ -11,5 +11,10 @@ $x = 0.5;
 <input type="text" name="fn" value="$y = sin($x)">
 <input type="submit" value="Draw a graph">
 </form>
-
+<?php
+if ($fn != "") {
+?>
 <img src="file.php?fn=<?=$fn?>">
+<?php
+}
+?>
