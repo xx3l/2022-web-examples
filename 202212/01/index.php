@@ -9,7 +9,7 @@ $fn = $_REQUEST["fn"] ?? "";
 <?php
 if ($fn != "") {
 ?>
-<img src="file.php?fn=<?=$fn?>">
+<img src="file.php?fn=<?=urlencode($fn)?>">
 <?php
 }
 ?>

@@ -1,6 +1,10 @@
 <?php
 $fn = $_REQUEST["fn"] ?? '$y = 0';
 $fn .= ";";
+//$x = 1;
+//eval($fn);
+//print $y;
+//die($fn);
 $im = imagecreatetruecolor(1000, 300);
 
 $col_graph = imagecolorallocatealpha($im, 255, 255, 255, 64);
