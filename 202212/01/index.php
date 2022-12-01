@@ -1,5 +1,7 @@
 <?php
 print_r($_REQUEST);
+$fn = $_REQUEST["fn"] ?? "";
+
 $command = ';';
 $x = 0.5;
 //eval ($command);
@@ -9,3 +11,5 @@ $x = 0.5;
 <input type="text" name="fn" value="$y = sin($x)">
 <input type="submit" value="Draw a graph">
 </form>
+
+<img src="file.php?fn=<?=$fn?>">
