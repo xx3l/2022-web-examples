@@ -12,7 +12,9 @@ for($x = -5; $x <= 5; $x += 0.01) {
 	eval($fn);
 	$scr_x = $x * 100 + 500;
 	$scr_y = -$y * 100 + 150;
-	imagesetpixel($im, $scr_x, $scr_y, $col_graph);
+	imagefilledrectangle($im, 
+	  $scr_x, $scr_y, $scr_x+2, $scr_y+2, 
+	  $col_graph);
 }
 header("Content-Type: image/png");
 imagepng($im);
