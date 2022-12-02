@@ -8,10 +8,10 @@ $fn .= ";";
 $im = imagecreatetruecolor(1000, 300);
 
 $col_graph = imagecolorallocatealpha($im, 255, 255, 255, 64);
-for($x = -5; $x <= 5; $x += 0.01) {
+for($x = -50; $x <= 50; $x += 0.01) {
 	eval($fn);
-	$scr_x = $x * 100 + 500;
-	$scr_y = -$y * 100 + 150;
+	$scr_x = $x * 10 + 500;
+	$scr_y = -$y * 10 + 150;
 	imagefilledrectangle($im, 
 	  $scr_x, $scr_y, $scr_x+2, $scr_y+2, 
 	  $col_graph);
