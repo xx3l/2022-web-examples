@@ -36,3 +36,4 @@ foreach ($q[$_SESSION["current_question"]] as $k => $v) {
   
   <input type='submit'>
 </form>
+<iframe width="1000" src="http://irk.ru">
