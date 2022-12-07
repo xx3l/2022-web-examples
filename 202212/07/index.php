@@ -26,6 +26,13 @@ print_r($_POST);
   <input type='submit' value="Перезапустить">
 </form>
 <form method="post">
-  <input type='radio' name='answer_id' value = '1'>Вариант 1</input>
+<?php
+foreach ($q[$_SESSION["current_question"]] as $k => $v) {
+?>
+  <input type='radio' name='answer_id' value = '<?=$v?>'>Вариант <?=$v?></input>
+<?php
+}  
+?>
+  
   <input type='submit'>
 </form>
