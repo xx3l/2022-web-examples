@@ -1,7 +1,13 @@
 <?php
 session_start();
 if (isset($_POST["user"])) {
-	print "Пошли проверять имя пользователя и пароль";
+	$captcha_answer = $_POST["captcha"] ?? "ну не знаю";
+	$correct_captcha_answer = $_SESSION["captcha"] ?? ""
+	if ($captcha_answer == ) {
+		print "Пошли проверять имя пользователя и пароль";
+	} else {
+		print "Капча не разгадана";
+	}
 } else {
 	print "Пока ничего пользователь не отправил";
 	$_SESSION["captcha"] = rand(100000000,999999999);
