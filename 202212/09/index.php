@@ -3,6 +3,13 @@ session_start();
 if (!isset($_SESSION["captcha"])) {
 	$_SESSION["captcha"] = rand(10000, 99999);
 }
+$captcha_user = $_POST["captcha"] ?? "-";
+$captcha_real = $_SESSION["captcha"] ?? "--";
+if ($captcha_user == $captcha_real) {
+	print "Вот теперь проверяем иям и пароль";
+} else {
+	print "ничего не проверяем";
+}
 print_r($_POST);
 ?>
 <form method="post">
