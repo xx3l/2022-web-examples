@@ -1,3 +1,6 @@
+<?php
+print_r($_POST);
+?>
 <form method="post">
   <input type="password" name="pass" 
     placeholder="Enter new pass here">
