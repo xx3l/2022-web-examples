@@ -1,4 +1,6 @@
 <?php
+session_start();
+$_SESSION["captcha"] = rand(100,999);
 print_r($_POST);
 ?>
 <form method="post">
