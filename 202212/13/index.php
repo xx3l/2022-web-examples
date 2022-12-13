@@ -3,6 +3,13 @@ session_start();
 if (!isset($_SESSION["captcha"])) {
   $_SESSION["captcha"] = rand(100,999);
 }
+if (isset($_POST["pass"]) && $_POST["pass"] != "") {
+	if ($_POST["captcha"] == $_SESSION["captcha"]) {
+      print "Try to change password";
+	} else {
+      print "Captcha is not solved!";
+	}
+}
 print_r($_POST);
 print_r($_SESSION);
 ?>
