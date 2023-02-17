@@ -39,7 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   document.querySelector(".gamefield").addEventListener("click", e => {
-    console.log(e);
+      if (e.target.classList.contains("cell")) console.log("click on cell")
+	  else console.log("click not on cell")
   })
 });
 </script>
