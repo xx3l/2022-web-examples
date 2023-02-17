@@ -8,6 +8,7 @@
 }
 .div2 { background: #ead; width:40%;
   margin-top: 10px;
+  padding: 50px;
 }
 </style>
 <div class="common">
