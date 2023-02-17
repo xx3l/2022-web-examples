@@ -4,18 +4,18 @@
   margin: 50px 10px 100px 0px;
 }
 .div1 { background: #fea; width:40%;
-  margin: 10px;
 }
 .div2 { background: #ead; width:40%;
-  margin: 10px;
-  border: 50px solid 10px solid;
+}
+.div {
+	
 }
 </style>
 <div class="common">
-	<div class="div1">
+	<div class="div1 div">
 	Это первый div
 	</div>
-	<div class="div2">
+	<div class="div2 div">
 	Это второй div
 	</div>
 </div>
