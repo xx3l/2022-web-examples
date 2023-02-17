@@ -1,13 +1,13 @@
 <style>
 .common { 
   background: #aea; 
-  margin: 10px;
+  margin: 50px 10px 100px 0px;
 }
 .div1 { background: #fea; width:40%;
   margin: 10px;
 }
 .div2 { background: #ead; width:40%;
-  margin: 10px;
+  margin-top: 10px;
 }
 </style>
 <div class="common">
