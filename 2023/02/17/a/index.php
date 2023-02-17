@@ -1,14 +1,15 @@
 <style>
 .common { 
   background: #aea; 
-  margin: 50px 10px 100px 0px;
+  margin: 0px;
 }
 .div1 { background: #fea; width:40%;
 }
 .div2 { background: #ead; width:40%;
 }
 .div {
-	display:block;
+	display:inline;
+	padding: 10px;
 }
 li { display: inline; }
 </style>
@@ -17,7 +18,7 @@ li { display: inline; }
 	Это первый div
 	</div>
 	<div class="div2 div">
-	Это второй div
+	много строк <br> тут
 	</div>
 </div>
 <ul>
