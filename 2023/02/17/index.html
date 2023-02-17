@@ -9,12 +9,15 @@
 window.onload = () => {
   el = document.querySelector(".table1");
   el.innerHTML = "test";
+  console.log("Single-type page load listener executed");
 }
 function fn_name() {
 }
-document.addEventListener("load", () => {
-  console.log("Page is loaded");
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Page structure is loaded");
 })
-
+window.addEventListener("load", () => {
+  console.log("load event");
+})
 
 </script>
