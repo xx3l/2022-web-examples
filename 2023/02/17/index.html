@@ -5,6 +5,8 @@
 	height: 30px;
 	display: inline-block;
   }
+  .red { background: red; }
+  .green { background: green; }
 </style>
 <div class="row">
 	<div class="cell"></div>
@@ -25,10 +27,12 @@
 window.onload = () => {
   console.log("Single-type page load listener executed");
 }
+cellNextColor = "green";
 document.addEventListener('DOMContentLoaded', () => {
   for (el of document.querySelectorAll(".cell")) {
     el.addEventListener("click", event => {
-	  console.log(event.target);
+	  event.target.classList.add(cellNextColor);
+	  cellNextColor = cellNextColor == "green" ? "red" : "green";
 	})
   }
 });
