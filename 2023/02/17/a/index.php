@@ -8,7 +8,7 @@
 }
 .div2 { background: #ead; width:40%;
   margin: 10px;
-  border: 50px dashed;
+  border: 50px solid 10px solid;
 }
 </style>
 <div class="common">
