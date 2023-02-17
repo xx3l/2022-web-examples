@@ -1,7 +1,14 @@
 <style>
-.common { background: #aea; }
-.div1 { background: #cea; width:40%;}
-.div2 { background: #ead; width:40%;}
+.common { 
+  background: #aea; 
+  margin: 10px;
+}
+.div1 { background: #fea; width:40%;
+  margin: 10px;
+}
+.div2 { background: #ead; width:40%;
+  margin: 10px;
+}
 </style>
 <div class="common">
 	<div class="div1">
