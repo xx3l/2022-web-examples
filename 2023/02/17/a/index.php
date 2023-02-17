@@ -8,22 +8,18 @@
 .div2 { background: #ead; width:40%;
 }
 .div {
-	display:inline;
+	display:inline-block;
 	padding: 10px;
+	margin: 10px;
+	border: 10px solid black;
 }
-li { display: inline; }
+
 </style>
 <div class="common">
 	<div class="div1 div">
 	Это первый div
 	</div>
 	<div class="div2 div">
-	много строк <br> тут
+	много строк тут
 	</div>
 </div>
-<ul>
-<li>1</li>
-<li>2</li>
-<li>3</li>
-<li>4</li>
-</ul>
