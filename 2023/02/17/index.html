@@ -7,7 +7,7 @@
   }
 </style>
 <div class="row">
-	<div class="cell">X</div>
+	<div class="cell"></div>
 	<div class="cell"></div>
 	<div class="cell"></div>
 </div>
@@ -25,7 +25,11 @@
 window.onload = () => {
   console.log("Single-type page load listener executed");
 }
-
+document.addEventListener('DOMContentLoaded', () => {
+  for (el of document.querySelectorAll(".cell")) {
+    console.log(el);
+  }
+});
 
 
 </script>
