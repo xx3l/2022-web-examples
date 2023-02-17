@@ -7,8 +7,8 @@
   margin: 10px;
 }
 .div2 { background: #ead; width:40%;
-  margin-top: 10px;
-  padding: 50px;
+  margin: 10px;
+  border: 50px dashed;
 }
 </style>
 <div class="common">
