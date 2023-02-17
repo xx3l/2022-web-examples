@@ -27,9 +27,9 @@ window.onload = () => {
 }
 document.addEventListener('DOMContentLoaded', () => {
   for (el of document.querySelectorAll(".cell")) {
-    console.log(el);
+    el.addEventListener("click", event => {
+	  console.log(event.target);
+	})
   }
 });
-
-
 </script>
