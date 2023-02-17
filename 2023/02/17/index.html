@@ -8,21 +8,23 @@
   .red { background: red; }
   .green { background: green; }
 </style>
-<div class="row">
-	<div class="cell"></div>
-	<div class="cell"></div>
-	<div class="cell"></div>
-</div>
-<div class="row">
-	<div class="cell"></div>
-	<div class="cell"></div>
-	<div class="cell"></div>
-</div>
-<div class="row">
-	<div class="cell"></div>
-	<div class="cell"></div>
-	<div class="cell"></div>
-</div>
+<div class="gamefield">
+	<div class="row">
+		<div class="cell"></div>
+		<div class="cell"></div>
+		<div class="cell"></div>
+	</div>
+	<div class="row">
+		<div class="cell"></div>
+		<div class="cell"></div>
+		<div class="cell"></div>
+	</div>
+	<div class="row">
+		<div class="cell"></div>
+		<div class="cell"></div>
+		<div class="cell"></div>
+	</div>
+<div>
 <script>
 window.onload = () => {
   console.log("Single-type page load listener executed");
@@ -35,5 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	  cellNextColor = cellNextColor == "green" ? "red" : "green";
 	})
   }
+  
+  document.querySelector(".gamefield").addEventListener("click", e => {
+    console.log(e);
+  })
 });
 </script>
