@@ -1,24 +1,34 @@
 <style>
-#my-div-id {
+#my-div-id-1 {
   padding: 30px;
   background: #eae;
 }
-.my-div-class {
+#my-div-id-2 {
   padding: 30px;
+  color: blue;
+}
+.my-div-class-1 {
   background: #abc;
+}
+.my-div-class-2 {
+  background: #cba;
+}
+.second-class {
+  padding: 30px;
+  color: red;
 }
 </style>
 <div>
   <a href="#">
-    <div id="my-div-id">
+    <div id="my-div-id-1 my-div-id-2">
       some content
     </div>
   </a>
 
-    <div class="my-div-class">
+    <div class="my-div-class-1 second-class">
       some content A
     </div>
-    <div class="my-div-class">
+    <div class="my-div-class-2 second-class">
       some content B
     </div>
 
