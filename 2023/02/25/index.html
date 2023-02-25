@@ -1,20 +1,40 @@
 <style>
-p.non-mono { dont-family: Arial; }
+pre.non-mono { font-family: Arial; }
+pre.mono { font-family: monospace; }
 </style>
-<p class="non-mono">
-programmers = ["I'm an expert Python Programmer",<br>
-               "I'm an expert Javascript Programmer",<br>
-               "I'm a professional Python Programmer"<br>
-               "I'm a beginner C++ Programmer"<br>
-]<br>
-#method 1<br>
-for p in programmers:<br>
-    if p.find("Python"):<br>
-        print(p)<br>
-#method 2<br>
-for p in programmers:<br>
-    if "Python" in p:<br>
-        print(p)<br>
 
-</p>
+<pre class="non-mono">
+programmers = ["I'm an expert Python Programmer",
+               "I'm an expert Javascript Programmer",
+               "I'm a professional Python Programmer"
+               "I'm a beginner C++ Programmer"
+]
+#method 1
+for p in programmers:
+    if p.find("Python"):
+        print(p)
+#method 2
+for p in programmers:
+    if "Python" in p:
+        print(p)
+
+monospace
+</pre>
+<pre class="mono">
+programmers = ["I'm an expert Python Programmer",
+               "I'm an expert Javascript Programmer",
+               "I'm a professional Python Programmer"
+               "I'm a beginner C++ Programmer"
+]
+#method 1
+for p in programmers:
+    if p.find("Python"):
+        print(p)
+#method 2
+for p in programmers:
+    if "Python" in p:
+        print(p)
+
+monospace
+</pre>
   <code>caption</code>
