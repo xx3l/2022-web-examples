@@ -16,7 +16,7 @@
 	  </ol>
 	  </nav>
 	  
-		<div class="btn-group" aria-label="Vertical">
+		<div class="btn-group" aria-label="Vertical radio toggle button group">
 		  <button type="button" class="btn btn-danger">Left</button>
 		  <button type="button" class="btn btn-warning">Middle</button>
 		  <button type="button" class="btn btn-success">Right</button>
