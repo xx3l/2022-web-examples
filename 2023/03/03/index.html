@@ -20,6 +20,7 @@ window.onload = () => {
   graphHeight = canvas.height;  
   ctx.beginPath();
   ctx.strokeStyle = "#808080";
+  ctx.setLineDash([1, 1]);
   ctx.moveTo(0, graphHeight/2);
   ctx.lineTo(graphWidth, graphHeight/2);
   ctx.moveTo(graphWidth/2, 0);
@@ -30,13 +31,18 @@ window.onload = () => {
     console.log("Button is clicked");
 	func = document.getElementById("function").value;
     z = 10;
-
+    
+	x = - z;
+	y = eval(func);
+	scrY = -y + graphHeight/2;
+    ctx.moveTo(0, scrY);
 	for (scrX = 0; scrX < graphWidth; ++scrX) {
 	  x = (2*z/graphWidth)*scrX - z;
       y = eval(func);
 	  scrY = -y + graphHeight/2;
-	  ctx.fillRect(scrX, scrY, 1, 1);
+	  ctx.lineTo(scrX, scrY);
 	}
+	ctx.stroke();
   })
 
 }
