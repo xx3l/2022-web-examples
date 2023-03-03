@@ -19,8 +19,17 @@ window.onload = () => {
 	ctx = canvas.getContext("2d");
 	graphWidth = canvas.width;
 	graphHeight = canvas.height;
+	
+	ctx.beginPath();
+	ctx.strokeStyle = "#888";
+    ctx.moveTo(0, graphHeight/2);
+    ctx.lineTo(graphWidth, graphHeight/2);
+    ctx.stroke();
+	
 	func = document.getElementById("function").value;
     z = 10;
+	
+	
 
 	for (scrX = 0; scrX < graphWidth; ++scrX) {
 	  x = (2*z/graphWidth)*scrX - z;
