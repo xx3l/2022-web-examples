@@ -9,6 +9,7 @@ canvas { background: #eee; }
 <canvas>
 </canvas>
 <script>
+ctx = null
 window.onload = () => {
   document.getElementsByTagName("canvas")[0].width = window.innerWidth;
   document.getElementsByTagName("canvas")[0].height = 300;
@@ -21,7 +22,7 @@ window.onload = () => {
 	graphHeight = canvas.height;
 	
 	ctx.beginPath();
-	ctx.strokeStyle = "#888";
+	ctx.strokeStyle = "#808080";
     ctx.moveTo(0, graphHeight/2);
     ctx.lineTo(graphWidth, graphHeight/2);
     ctx.stroke();
