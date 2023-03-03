@@ -3,7 +3,7 @@ body { margin: 0; }
 canvas { background: #eee; }
 </style>
 <div>
-  <input type="text" id="function">
+  <input type="text" id="function" value="Math.sin(x*x-x-3)*50">
   <button id="draw">Draw a plot</button>
 </div>
 <canvas>
@@ -20,7 +20,7 @@ window.onload = () => {
   graphHeight = canvas.height;  
   ctx.beginPath();
   ctx.strokeStyle = "#808080";
-  ctx.setLineDash([1, 1]);
+  ctx.setLineDash([2, 2]);
   ctx.moveTo(0, graphHeight/2);
   ctx.lineTo(graphWidth, graphHeight/2);
   ctx.moveTo(graphWidth/2, 0);
@@ -35,6 +35,9 @@ window.onload = () => {
 	x = - z;
 	y = eval(func);
 	scrY = -y + graphHeight/2;
+	ctx.beginPath();
+	ctx.setLineDash([])
+    ctx.strokeStyle = "#f44";
     ctx.moveTo(0, scrY);
 	for (scrX = 0; scrX < graphWidth; ++scrX) {
 	  x = (2*z/graphWidth)*scrX - z;
