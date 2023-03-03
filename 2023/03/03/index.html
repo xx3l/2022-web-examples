@@ -47,9 +47,13 @@ window.onload = () => {
 	}
 	ctx.stroke();
   })
+  offsetY = document.getElementsByTagName("canvas")[0].getBoundingClientRect().top
+  mousePos = [0,0]
   document.getElementsByTagName("canvas")[0].addEventListener("mousemove", ev => {
-    console.log(ev.clientX, ev);
-
+    mousePos = [ev.clientX, ev.clientY - offsetY];
+  })
+  document.getElementsByTagName("canvas")[0].addEventListener("mousedown", ev => {
+   ctx.fillRect(mousePos[0], mousePos[1], 5, 5);
   })
 
 }
