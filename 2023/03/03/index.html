@@ -14,10 +14,15 @@ window.onload = () => {
   document.getElementsByTagName("canvas")[0].height = 300;
   document.getElementById("draw").addEventListener("click", () => {
     console.log("Button is clicked");
-	let func = document.getElementById("function").value;
-    x = 2;
-    y = eval(func);
-    console.log(y);
+	
+	canvas = document.getElementsByTagName("canvas")[0];
+	ctx = canvas.getContext("2d");
+	pixelWidth = canvas.width;
+	func = document.getElementById("function").value;
+	for (x = 0; x < pixelWidth; ++x) {
+      y = eval(func);
+	  ctx.fillRect(x, y, 1, 1);
+	}
   })
 
 }
