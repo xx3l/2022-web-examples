@@ -49,11 +49,18 @@ window.onload = () => {
   })
   offsetY = document.getElementsByTagName("canvas")[0].getBoundingClientRect().top
   mousePos = [0,0]
+  mouseBtnPressed = false;
   document.getElementsByTagName("canvas")[0].addEventListener("mousemove", ev => {
     mousePos = [ev.clientX, ev.clientY - offsetY];
+	if (mouseBtnPressed)
+	   ctx.fillRect(mousePos[0], mousePos[1], 1, 1);
+
   })
   document.getElementsByTagName("canvas")[0].addEventListener("mousedown", ev => {
-   ctx.fillRect(mousePos[0], mousePos[1], 5, 5);
+    mouseBtnPressed = true;
+  })
+  document.getElementsByTagName("canvas")[0].addEventListener("mouseup", ev => {
+    mouseBtnPressed = false;
   })
 
 }
