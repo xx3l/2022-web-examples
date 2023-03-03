@@ -1,10 +1,16 @@
 <style>
 body { margin: 0; }
+canvas { background: #eee; }
 </style>
+<div>
+  <input type="text" id="function">
+  <button id="draw">Draw a plot</button>
+</div>
 <canvas>
 </canvas>
 <script>
 window.onload = () => {
   document.getElementsByTagName("canvas")[0].width = window.innerWidth;
+  document.getElementsByTagName("canvas")[0].height = 300;
 }
 </script>
