@@ -12,5 +12,13 @@ canvas { background: #eee; }
 window.onload = () => {
   document.getElementsByTagName("canvas")[0].width = window.innerWidth;
   document.getElementsByTagName("canvas")[0].height = 300;
+  document.getElementById("draw").addEventListener("click", () => {
+    console.log("Button is clicked");
+	let func = document.getElementById("function").value;
+    x = 2;
+    y = eval(func);
+    console.log(y);
+  })
+
 }
 </script>
