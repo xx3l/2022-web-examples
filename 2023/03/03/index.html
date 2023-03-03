@@ -17,11 +17,16 @@ window.onload = () => {
 	
 	canvas = document.getElementsByTagName("canvas")[0];
 	ctx = canvas.getContext("2d");
-	pixelWidth = canvas.width;
+	graphWidth = canvas.width;
+	graphHeight = canvas.height;
 	func = document.getElementById("function").value;
-	for (x = 0; x < pixelWidth; ++x) {
+    z = 10;
+
+	for (scrX = 0; scrX < graphWidth; ++scrX) {
+	  x = (2*z/graphWidth)*scrX - z;
       y = eval(func);
-	  ctx.fillRect(x, y, 1, 1);
+	  scrY = -y + graphHeight/2;
+	  ctx.fillRect(scrX, scrY, 1, 1);
 	}
   })
 
