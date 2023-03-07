@@ -13,6 +13,7 @@
 .figure {
 	font-size: 40px;
 	cursor: pointer;
+	border-radius: 30px;
 }
 .figure::selection {
 	color: #000;
@@ -29,12 +30,12 @@
   <div class="cell"></div>
 </div><div class="row">
   <div class="cell"></div>
-  <div class="cell"></div>
+  <div class="cell">&#x2658;</div>
   <div class="cell"></div>
 </div>
 <template id="figure">
-  <div class="figure">
-    &#x2658;
+  <div class="figure" draggable="true">
+      &#x2658;
   </div>
 </template>
 <script>
