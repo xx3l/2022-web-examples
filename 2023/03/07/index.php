@@ -44,10 +44,16 @@ window.addEventListener("load",() => {
 
 	document.querySelectorAll(".cell")[0].appendChild(tpl.cloneNode(true));
 	document.querySelectorAll(".cell")[4].appendChild(tpl.cloneNode(true));
-	document.querySelector(".figure").addEventListener("dragstart", ev => {
-		console.log(ev);
-	})
-
+	for (el of document.querySelectorAll(".figure")) {
+		el.addEventListener("dragstart", ev => {
+			console.log("drag started", ev.toElement);
+		})
+	}
+	for (el of document.querySelectorAll(".cell")) {
+			el.addEventListener("dragend", ev => {
+			console.log("drag end", ev);
+		})
+	}
 })
 </script>
 
