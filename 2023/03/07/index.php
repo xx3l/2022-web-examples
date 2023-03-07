@@ -24,5 +24,11 @@
   <div class="cell"></div>
 </div>
 <template id="figure">
-12312
+  &#x2658;
 </template>
+<script>
+window.addEventListener("load",() => {
+	console.log("doc is loaded")
+})
+</script>
+
