@@ -45,7 +45,8 @@
 <script>
 window.addEventListener("load",() => {
 	const tpl = document.getElementById("figure");
-	const tplForInsert = tpl.content.cloneNode(true);
+	let  tplForInsert = tpl.content.cloneNode(true);
+	console.log(tplForInsert);
 	document.querySelector(".cell").appendChild(tplForInsert);
 	document.querySelector(".cell .figure").addEventListener("click", () => {
 		console.log("You just clicked me!!!!");
