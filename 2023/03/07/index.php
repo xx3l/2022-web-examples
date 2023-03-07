@@ -25,6 +25,7 @@
 </div>
 <template id="figure">
   &#x2658;
+  <span class="a">some text</span>
 </template>
 <script>
 window.addEventListener("load",() => {
