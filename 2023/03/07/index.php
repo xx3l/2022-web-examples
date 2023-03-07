@@ -8,9 +8,14 @@
 	margin: 3px;
 	background: #eea;
 	vertical-align: bottom;
+	text-align: center;
 }
 .figure {
 	font-size: 40px;
+	cursor: pointer;
+}
+.figure::selection {
+	color: #000;
 }
 </style>
 <div class="row">
@@ -28,7 +33,7 @@
   <div class="cell"></div>
 </div>
 <template id="figure">
-  <div class="figure"
+  <div class="figure">
     &#x2658;
   </div>
 </template>
