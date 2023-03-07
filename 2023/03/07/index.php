@@ -28,7 +28,9 @@
 </template>
 <script>
 window.addEventListener("load",() => {
-	console.log("doc is loaded")
+	console.log("doc is loaded");
+	const tpl = document.getElementById("figure");
+	console.log(tpl);
 })
 </script>
 
