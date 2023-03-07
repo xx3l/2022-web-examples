@@ -7,6 +7,10 @@
 	border: 1px black solid;
 	margin: 3px;
 	background: #eea;
+	vertical-align: bottom;
+}
+.figure {
+	font-size: 40px;
 }
 </style>
 <div class="row">
@@ -24,14 +28,15 @@
   <div class="cell"></div>
 </div>
 <template id="figure">
-  &#x2658;
-  <span class="a">some text</span>
+  <div class="figure"
+    &#x2658;
+  </div>
 </template>
 <script>
 window.addEventListener("load",() => {
 	const tpl = document.getElementById("figure");
 	const tplForInsert = tpl.content.cloneNode(true);
-	console.log(tplForInsert);
+	document.querySelector(".cell").appendChild(tplForInsert);
 })
 </script>
 
