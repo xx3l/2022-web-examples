@@ -30,11 +30,7 @@
   <div class="cell"></div>
 </div><div class="row">
   <div class="cell"></div>
-  <div class="cell">
-    <div class="figure">
-      &#x2658;
-    </div>
-  </div>
+  <div class="cell"></div>
   <div class="cell"></div>
 </div>
 <template id="figure">
@@ -45,9 +41,12 @@
 <script>
 window.addEventListener("load",() => {
 	const tpl = document.getElementById("figure").content;	
-	let tplForInsert = tpl.cloneNode(true);
-	el = document.querySelector(".cell").appendChild(tplForInsert);
-	console.log(el.content)
+
+	document.querySelectorAll(".cell")[0].appendChild(tpl.cloneNode(true));
+	document.querySelectorAll(".cell")[4].appendChild(tpl.cloneNode(true));
+	document.querySelector(".figure").addEventListener("dragstart", ev => {
+		console.log(ev);
+	})
 
 })
 </script>
