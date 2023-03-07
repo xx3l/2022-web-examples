@@ -13,10 +13,12 @@
 .figure {
 	font-size: 40px;
 	cursor: pointer;
-	border-radius: 30px;
 }
 .figure::selection {
 	color: #000;
+}
+.over {
+	background: #aee;
 }
 </style>
 <div class="row">
@@ -51,6 +53,8 @@ window.addEventListener("load",() => {
 	}
 	for (el of document.querySelectorAll(".cell")) {
 			el.addEventListener("dragover", ev => {
+			targetElement = ev.target;
+			targetElement.classList.add("over");
 			console.log("drag over", ev);
 		})
 	}
