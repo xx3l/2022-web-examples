@@ -50,8 +50,8 @@ window.addEventListener("load",() => {
 		})
 	}
 	for (el of document.querySelectorAll(".cell")) {
-			el.addEventListener("dragend", ev => {
-			console.log("drag end", ev);
+			el.addEventListener("dragover", ev => {
+			console.log("drag over", ev);
 		})
 	}
 })
