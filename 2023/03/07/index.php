@@ -30,7 +30,11 @@
   <div class="cell"></div>
 </div><div class="row">
   <div class="cell"></div>
-  <div class="cell">&#x2658;</div>
+  <div class="cell">
+    <div class="figure">
+      &#x2658;
+    </div>
+  </div>
   <div class="cell"></div>
 </div>
 <template id="figure">
@@ -43,6 +47,9 @@ window.addEventListener("load",() => {
 	const tpl = document.getElementById("figure");
 	const tplForInsert = tpl.content.cloneNode(true);
 	document.querySelector(".cell").appendChild(tplForInsert);
+	document.querySelector(".cell .figure").addEventListener("click", () => {
+		console.log("You just clicked me!!!!");
+	})	
 })
 </script>
 
