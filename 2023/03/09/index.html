@@ -1,43 +1,8 @@
 <style>
-td { width: 20px; height: 20px; background: #eee; border: 1px solid grey; }
-tr:nth-child(4n) td:nth-child(4n-1) { background: red; }
-tr:nth-child(4n) td:nth-child(4n) { background: red; }
-tr:nth-child(4n-1) td:nth-child(4n-1) { background: red; }
-tr:nth-child(4n-1) td:nth-child(4n) { background: red; }
-
+.a { text-decoration: underline dotted; }
+.a::after {content: "123";}
 </style>
-<table border=1>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-  <tr>
-    <td></td><td></td><td></td><td></td>
-    <td></td><td></td><td></td><td></td>
-  </tr>
-
-</table>
+<div>
+<span class="a">Hello</span>
+<span>world</span>
+</div>
