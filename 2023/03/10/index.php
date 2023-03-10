@@ -9,9 +9,9 @@ window.onload = () => {
 			+ document.getElementById("v2").value
 		console.log(params);
 		fetch(params)
-			.then(response => response.text())
+			.then(response => response.json())
 			.then(data => {
-				document.getElementById("response").innerText = data;
+				document.getElementById("response").innerText = data.sum;
 			});
 		console.log("code is woking still");
 	}
