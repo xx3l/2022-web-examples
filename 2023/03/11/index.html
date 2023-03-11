@@ -1,6 +1,10 @@
 <style>
 td { border: 1px dotted gray; padding: 10px; }
-td:nth-child(odd) { background: yellow; }
+tr:nth-child(4n) td:nth-child(4n) { background: yellow; }
+tr:nth-child(4n) td:nth-child(4n-1) { background: yellow; }
+tr:nth-child(4n-1) td:nth-child(4n) { background: yellow; }
+tr:nth-child(4n-1) td:nth-child(4n-1) { background: yellow; }
+
 </style>
 <table>
 <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
