@@ -53,9 +53,9 @@ window.onload = function() {
 	document.querySelector(".content").onclick = function(ev) {
 		if (ev.target.tagName != 'BUTTON') return;
 		if (ev.target.attributes.answer.value == ev.target.parentElement.querySelector('input').value) {
-			alert("correct!")
+			ev.target.parentElement.classList.add("correct");
 		} else {
-			alert("not correct!")
+			ev.target.parentElement.classList.add("not-correct");
 		}
 	}
 	getSomeMore();
