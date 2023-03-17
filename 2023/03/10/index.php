@@ -3,7 +3,6 @@
 <head>
 <style>
 span.example { 
-  background: yellow; 
   width: 100px; 
   display: inline-block;
   text-align: right;
@@ -16,6 +15,7 @@ input {
 </head>
 <body>
 <div class="content">
+  <div class="end"></div>
 </div>
 <button id="more">Give me more!</button>
 </body>
@@ -29,10 +29,10 @@ function getSomeMore() {
 			html = '';
 			for (example of set) {
 				console.log(example);
-				html += `<div><span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"></div>`;
+				html += `<div><span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"><button>Check</button></div>`;
 			}
 			html += `<div class="end"></div>`;
-			document.querySelector('.content').innerHTML = html;
+			document.querySelector('.content .end').outerHTML = html;
 		})
 }
 window.onload = function() {
