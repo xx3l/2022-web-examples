@@ -29,16 +29,24 @@ function getSomeMore() {
 			html = '';
 			for (example of set) {
 				console.log(example);
-				html += `<div><span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"><button>Check</button></div>`;
+				html += `<div><span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"><button answer="${example.answer}" onclick="check()">Check</button></div>`;
 			}
 			html += `<div class="end"></div>`;
 			document.querySelector('.content .end').outerHTML = html;
 		})
 }
+function check() {
+	
+}
+
 window.onload = function() {
 	console.log("page is loaded");
 	document.getElementById("more").onclick = function() {
 		getSomeMore();
+	}
+	document.querySelector(".content").onclick = function(ev) {
+		if (ev.target.tagName != 'BUTTON') return;
+		console.log(ev.target);
 	}
 	getSomeMore();
 }
