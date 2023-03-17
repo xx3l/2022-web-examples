@@ -11,6 +11,12 @@ span.example {
 input {
 	width: 50px;
 }
+.correct {
+	background: green;
+}
+.not-correct {
+	background: red;
+}
 </style>
 </head>
 <body>
@@ -46,7 +52,11 @@ window.onload = function() {
 	}
 	document.querySelector(".content").onclick = function(ev) {
 		if (ev.target.tagName != 'BUTTON') return;
-		console.log(ev.target);
+		if (ev.target.attributes.answer.value == ev.target.parentElement.querySelector('input').value) {
+			alert("correct!")
+		} else {
+			alert("not correct!")
+		}
 	}
 	getSomeMore();
 }
