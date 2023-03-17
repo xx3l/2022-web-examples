@@ -4,16 +4,23 @@
 <body>
 <div class="content">
 <div>
-<button>Give me more!</button>
+<button id="more">Give me more!</button>
 </body>
 <script>
 function getSomeMore() {
 	fetch("backend.php")
-		.then(resp => resp.json())
-		.then(json => console.log(json))
+		.then(function(resp) {
+			return resp.json();
+		})
+		.then(function(json) {
+			console.log(json);
+		})
 }
 window.onload = function() {
 	console.log("page is loaded");
+	document.getElementById("more").onclick = function() {
+		getSomeMore();
+	}
 	getSomeMore();
 }
 </script>
