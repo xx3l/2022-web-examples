@@ -2,7 +2,16 @@
 <html>
 <head>
 <style>
-span.example { background: yellow; }
+span.example { 
+  background: yellow; 
+  width: 100px; 
+  display: inline-block;
+  text-align: right;
+  padding: 0 10px;
+}
+input {
+	width: 50px;
+}
 </style>
 </head>
 <body>
@@ -20,7 +29,7 @@ function getSomeMore() {
 			html = '';
 			for (example of set) {
 				console.log(example);
-				html += '<span class="example">'example.number1 + example.action +example.number2 + '</span><input type="number"><br>';
+				html += `<span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"><br>`;
 			}
 			document.querySelector('.content').innerHTML = html;
 		})
