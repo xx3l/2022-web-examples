@@ -16,7 +16,7 @@ input {
 </head>
 <body>
 <div class="content">
-<div>
+</div>
 <button id="more">Give me more!</button>
 </body>
 <script>
@@ -29,8 +29,9 @@ function getSomeMore() {
 			html = '';
 			for (example of set) {
 				console.log(example);
-				html += `<span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"><br>`;
+				html += `<div><span class="example">${example.number1} ${example.action} ${example.number2} = </span><input type="number"></div>`;
 			}
+			html += `<div class="end"></div>`;
 			document.querySelector('.content').innerHTML = html;
 		})
 }
