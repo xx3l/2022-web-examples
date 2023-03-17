@@ -1,19 +1,14 @@
-<input id="v1" value="51"><input id="v2" value="52">
-<button id="send">Make HTTP GET request to server</button>
-<div id="response"></div>
+<!doctype html>
+<html>
+<head></head>
+<body>
+<div class="content">
+<div>
+<button>Give me more!</button>
+</body>
 <script>
-window.onload = () => {
-	console.log("loaded");
-	document.getElementById("send").onclick = () => {
-		params = "backend.php?v1=" + document.getElementById("v1").value + "&v2="
-			+ document.getElementById("v2").value
-		console.log(params);
-		fetch(params)
-			.then(response => response.json())
-			.then(data => {
-				document.getElementById("response").innerText = data.sum;
-			});
-		console.log("code is woking still");
-	}
+window.onload = function() {
+	console.log("page is loaded");
 }
 </script>
+</html>
