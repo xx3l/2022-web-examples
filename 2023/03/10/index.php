@@ -12,8 +12,13 @@ function getSomeMore() {
 		.then(function(resp) {
 			return resp.json();
 		})
-		.then(function(json) {
-			console.log(json);
+		.then(function(set) {
+			console.log(set);
+			html = '';
+			for (example of set) {
+				html += example.number1 + example.action +example.number2 + "<br>" ;
+			}
+			//html = 
 		})
 }
 window.onload = function() {
