@@ -1,6 +1,10 @@
 <!doctype html>
 <html>
-<head></head>
+<head>
+<style>
+span.example { background: yellow; }
+</style>
+</head>
 <body>
 <div class="content">
 <div>
@@ -13,12 +17,12 @@ function getSomeMore() {
 			return resp.json();
 		})
 		.then(function(set) {
-			console.log(set);
 			html = '';
 			for (example of set) {
-				html += example.number1 + example.action +example.number2 + "<br>" ;
+				console.log(example);
+				html += '<span class="example">'example.number1 + example.action +example.number2 + '</span><input type="number"><br>';
 			}
-			//html = 
+			document.querySelector('.content').innerHTML = html;
 		})
 }
 window.onload = function() {
