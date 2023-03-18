@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="bootstrap.css">
     <script src="1bootstrap.js"></script>
 	<style>
-	.test:active{
-		background-color: #000;
-	}
+	.test{
+	position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+    display: none;	}
 	</style>
   </head>
   <body>
